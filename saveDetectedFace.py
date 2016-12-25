@@ -12,6 +12,7 @@ import cv2
 def detectFace(frame):
     found = False
     rect_frame = None
+    crop_frame = None
     # Create the haar cascade
     faceCascade = cv2.CascadeClassifier("./haarcascade_frontalface_default.xml")
     
